@@ -116,6 +116,11 @@ main {
 
 .curated-posts article {
   width: 25%;
+  margin-right: 2px;
+}
+
+#last-article {
+  margin-right: 0;
 }
 
 .newsletter {
