@@ -100,3 +100,43 @@ section {
   background: #76d0a4;
 }
 
+.community-links {
+  display: grid;
+  height: 80rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#person-of-the-week {
+  grid-column: 1/-1;
+}
+
+.community-links article {
+  border: 1px solid black;
+  background: white;
+}
+
+.design-systems {
+  height: 15rem;
+  background: grey;
+}
+
+.curated-posts {
+  display: flex;
+  flex-direction: row;
+  height: 40rem;
+  width: 95%;
+  margin: 5px auto;
+}
+
+.curated-posts article {
+  width: 25%;
+  border: 1px solid black;
+}
+
+.newsletter {
+  height: 60rem;
+  width: 90%;
+  margin: 10px auto;
+  background: blue;
+}
