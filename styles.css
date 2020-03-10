@@ -49,7 +49,7 @@ table {
 
 nav {
   height: 10rem;
-  background: gray;
+  
 }
 
 main {
@@ -59,8 +59,6 @@ main {
 
 section {
   height: 7rem;
-  background-color: #353535;
-  border-bottom: 1px solid blue;
 }
 
 .latest-articles {
@@ -70,14 +68,8 @@ section {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.latest-articles > article {
-  background: white;
-  border: 1px solid black;
-}
-
 .latest-posts {
   height: 160rem;
-  border: 1px solid goldenrod;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1.5fr 1.2fr;
@@ -85,7 +77,6 @@ section {
 
 .latest-posts > article {
   border: 1px solid black;
-  background: #f0f0f0;
 }
 
 .smashing-tv {
@@ -97,7 +88,6 @@ section {
 
 .ethical-design {
   height: 40rem;
-  background: #76d0a4;
 }
 
 .community-links {
@@ -111,14 +101,9 @@ section {
   grid-column: 1/-1;
 }
 
-.community-links article {
-  border: 1px solid black;
-  background: white;
-}
 
 .design-systems {
   height: 15rem;
-  background: grey;
 }
 
 .curated-posts {
@@ -131,17 +116,18 @@ section {
 
 .curated-posts article {
   width: 25%;
-  border: 1px solid black;
 }
 
 .newsletter {
   height: 60rem;
   width: 90%;
   margin: 10px auto;
-  background: blue;
 }
 
 footer {
   height: 40rem;
-  background: grey;
+}
+
+.dark-silver {
+  background: #746D69;
 }
