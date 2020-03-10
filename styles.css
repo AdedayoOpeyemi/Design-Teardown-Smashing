@@ -50,6 +50,12 @@ table {
 nav {
   height: 10rem;
   border-bottom: 5px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: white;
 }
 
 main {
@@ -58,7 +64,7 @@ main {
 }
 
 .latest-articles {
-  height: 50rem;
+  height: 100rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -66,14 +72,45 @@ main {
 
 .latest-articles article {
   border: 5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  padding: 4rem;
 }
 
+
+
 .latest-posts {
-  height: 70rem;
+  height: 140rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1.5fr 1.2fr;
   grid-gap: 2px;
+}
+
+.latest-posts article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: black;
+  padding: 3rem;
+}
+
+.latest-posts article h2 {
+  margin-bottom: 2rem;
+}
+
+.latest-posts article p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
 }
 
 .smashing-tv {
