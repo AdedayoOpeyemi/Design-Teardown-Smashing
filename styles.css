@@ -127,15 +127,39 @@ main {
 
 .community-links {
   display: grid;
-  height: 50rem;
+  height: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2fr repeat(3, 1fr);
   grid-gap: 2px;
 }
 
+.community-links section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.community-links section > article {
+  border: none;
+}
+
+.community-links section > article h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.community-links section > article p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+
+}
+
 #person-of-the-week {
   grid-column: 1/-1;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 2rem;
@@ -163,6 +187,16 @@ main {
   min-height: 180px;
   min-width: 180px;
   margin: 20px;
+  background: #746D69;
+  border-radius: 7px;
+}
+
+
+.small-profile-pic {
+  min-height: 50px;
+  min-width: 50px;
+  margin: 20px;
+  margin-top: 0;
   background: #746D69;
   border-radius: 7px;
 }
