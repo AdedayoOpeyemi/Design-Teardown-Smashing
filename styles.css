@@ -74,3 +74,24 @@ section {
   background: white;
   border: 1px solid black;
 }
+
+.latest-posts {
+  height: 160rem;
+  border: 1px solid goldenrod;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1.5fr 1.2fr;
+}
+
+.latest-posts > article {
+  border: 1px solid black;
+  background: #f0f0f0;
+}
+
+.smashing-tv {
+  height: 40rem;
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
