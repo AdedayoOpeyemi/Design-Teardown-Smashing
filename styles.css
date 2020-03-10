@@ -209,7 +209,7 @@ main {
 .curated-posts {
   display: flex;
   flex-direction: row;
-  height: 25rem;
+  height: auto;
   width: 95%;
   margin: 5px auto;
 }
@@ -217,10 +217,32 @@ main {
 .curated-posts article {
   width: 25%;
   margin-right: 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
 
 #last-article {
   margin-right: 0;
+}
+
+.curated-posts article h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.curated-posts article ul {
+  list-style: disc inside;
+}
+
+.curated-posts article li {
+  margin: 1rem;
+}
+
+.curated-posts article a {
+  color: black;
+  font-size: 1.5rem;
 }
 
 .newsletter {
