@@ -254,6 +254,65 @@ main {
 
 footer {
   height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  color: black;
+
+}
+
+footer h3 {
+  margin-bottom: 6rem;
+  color: white;
+}
+
+
+footer ul {
+  display: flex;
+  list-style: disc inside;
+  flex-wrap:wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 10px 5px;
+  line-height: 30px;
+}
+
+footer ul li a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  width: 25%;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+footer p a {
+  color: white;
+}
+
+.footer-links {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+
+.footer-links li a {
+  font-size: 17px;
+  text-decoration: underline;
+  color: white;
+  font-weight: 500;
 }
 
 .dark-silver {
@@ -271,3 +330,4 @@ footer {
 .silver-chalice {
   background: #ACADA8;
 }
+
