@@ -49,7 +49,7 @@ table {
 
 nav {
   height: 10rem;
-  
+  border-bottom: 5px solid white;
 }
 
 main {
@@ -57,26 +57,23 @@ main {
   flex-direction: column;
 }
 
-section {
-  height: 7rem;
-}
-
 .latest-articles {
-  height: 80rem;
+  height: 50rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
 
+.latest-articles article {
+  border: 5px solid white;
+}
+
 .latest-posts {
-  height: 160rem;
+  height: 70rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1.5fr 1.2fr;
-}
-
-.latest-posts > article {
-  border: 1px solid black;
+  grid-gap: 2px;
 }
 
 .smashing-tv {
@@ -88,13 +85,15 @@ section {
 
 .ethical-design {
   height: 40rem;
+  margin: 5px 0 10px;
 }
 
 .community-links {
   display: grid;
-  height: 80rem;
+  height: 50rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  grid-gap: 2px;
 }
 
 #person-of-the-week {
@@ -104,12 +103,13 @@ section {
 
 .design-systems {
   height: 15rem;
+  margin: 10px 0;
 }
 
 .curated-posts {
   display: flex;
   flex-direction: row;
-  height: 40rem;
+  height: 25rem;
   width: 95%;
   margin: 5px auto;
 }
@@ -119,15 +119,28 @@ section {
 }
 
 .newsletter {
-  height: 60rem;
+  height: 40rem;
   width: 90%;
   margin: 10px auto;
+  border-radius: 10px;
 }
 
 footer {
-  height: 40rem;
+  height: 30rem;
 }
 
 .dark-silver {
   background: #746D69;
+}
+
+.bright-gray {
+  background: #E8E9EB;
+}
+
+.bright-gray article {
+  border: 1px solid #746D69;
+}
+
+.silver-chalice {
+  background: #ACADA8;
 }
