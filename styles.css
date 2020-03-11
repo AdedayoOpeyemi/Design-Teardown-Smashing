@@ -186,9 +186,14 @@ main {
 .profile-pic {
   min-height: 180px;
   min-width: 180px;
-  margin: 20px;
+  margin: 40px;
   background: #746D69;
   border-radius: 7px;
+  /* transform: rotate(-20deg); */
+}
+
+.profle-pic:hover {
+  background: white;
 }
 
 
@@ -199,6 +204,7 @@ main {
   margin-top: 0;
   background: #746D69;
   border-radius: 7px;
+  transform: rotate(-20deg);
 }
 
 .design-systems {
