@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  background: #e8e9eb;
 }
 ol, ul {
 	list-style: none;
@@ -81,6 +82,8 @@ nav {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .latest-articles {
@@ -100,6 +103,7 @@ main {
   font-weight: 700;
   color: #e8e9eb;
   padding: 4rem;
+  padding-bottom: 0;
 }
 
 .profile-pic {
@@ -165,11 +169,32 @@ main {
   color: #acada8;
 }
 
+.latest-articles .material-icons {
+  justify-self: flex-end;
+  align-self: flex-start;
+  transform: scale(3,2);
+  margin: 0;
+  margin-top: 12rem;
+  color: #acada8;
+}
+
+.latest-posts .material-icons {
+  align-self: flex-start;
+  transform: scale(3,2);
+  margin: 0;
+  margin-top: 6rem;
+  color: #bbbcb6;
+}
+
+#middle-row {
+  margin-top: 32rem;
+}
+
 .latest-posts {
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1.5fr 1.2fr;
+  grid-template-rows: 0.8fr 1.5fr 1fr;
   grid-gap: 2px;
 }
 
@@ -240,7 +265,7 @@ main {
   border: none;
   border-radius: 10px;
   outline: none;
-  color: black;
+  color: #746D69;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -260,13 +285,14 @@ main {
   width: 90%;
   border-radius: 10px;
   margin: 10px auto;
+  margin-bottom: 5rem;
 }
 
 .newsletter-img {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid #e8e9eb;
   margin-top: 30px;
 }
 
@@ -280,17 +306,23 @@ main {
   margin-top: 10rem;
   font-size: 3rem;
   font-weight: 700;
-  color: white;
+  color: #e8e9eb;
   text-decoration: underline;
 }
 
-.smashing-tv-anchor {
+#smashing-tv-anchor {
   margin-top: 3rem;
+  color: #e8e9eb;
 }
 
-.smashing-tv p {
+#smashing-tv-p {
   text-align: center;
   color: #acada8;
+}
+
+.sign-in {
+  color: #acada8;
+  margin-top: 1rem;
 }
 
 .ethical-design {
@@ -300,12 +332,26 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 5rem;
   padding-bottom: 10rem;
+}
+
+.pre-launch {
+  color: #bbbcb6;
+}
+
+.bullet {
+  margin: 0.8rem;
+}
+
+.extra-content a {
+  color: #cccdc6;
+  margin-top: 2rem;
 }
 
 .extra-content h3 {
   width: 50%;
-  color: #cccdc6;
+  color: #e8e9eb;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -316,17 +362,23 @@ main {
   font-size: 1.5rem;
   line-height: 3rem;
   margin-bottom: 40px;
+  color: #bbbcb6;
+}
+
+.more articles
+
+.ethical-design-button {
+  font-size: 1.2rem;
 }
 
 #Ethical-design-book {
   width: 60%;
-  height: 700px;
+  height: 400px;
   background: #746D69;
   border: 5px solid #E8E9EB;
   border-radius: 25px;
   margin-top: 4rem;
 }
-
 
 .community-links {
   display: grid;
@@ -402,20 +454,28 @@ main {
 }
 
 .design-systems h3 {
-  font-size: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #cccdc6;
 }
 
 .design-systems a {
-  margin-top: 2rem;;
+  margin-top: 1.5rem;
+  color: #e8e9eb;
 }
 
 .design-systems p {
   width: 100%;
   font-size: 1.5rem;
+  color: #acada8;
 }
 
 .design-systems-button {
-  width: 18rem;
+  width: 20rem;
+}
+
+.design-systems-button span {
+  font-size: 1.5rem;
 }
 
 .design-systems div {
@@ -462,10 +522,12 @@ main {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 2rem;
+  color: #746D69;
 }
 
 .curated-posts article ul {
   list-style: disc inside;
+  color: #acada8;
 }
 
 .curated-posts article li {
@@ -473,7 +535,7 @@ main {
 }
 
 .curated-posts article a {
-  color: black;
+  color: inherit;
   font-size: 1.5rem;
 }
 
@@ -492,10 +554,12 @@ main {
 .newsletter a {
   margin-top: 2rem;
   text-align: center;
+  color: #e8e9eb;
 }
 
 .newsletter p {
   text-align: center;
+  color: #cccdc6;
 }
 
 .newsletter form {
@@ -546,7 +610,8 @@ footer {
 
 footer h3 {
   margin-bottom: 6rem;
-  color: white;
+  color: #e8e9eb;
+  font-size: 0.8rem;
 }
 
 
@@ -556,6 +621,7 @@ footer ul {
   flex-wrap:wrap;
   text-align: center;
   justify-content: center;
+  color: #e8e9eb;
 }
 
 footer ul li {
@@ -565,7 +631,7 @@ footer ul li {
 
 footer ul li a {
   font-size: 1.5rem;
-  color: white;
+  color: #e8e9eb;
   text-decoration: none;
 }
 
@@ -573,11 +639,11 @@ footer p {
   width: 25%;
   text-align: center;
   margin-top: 30px;
-  color: white;
+  color: #e8e9eb;
 }
 
 footer p a {
-  color: white;
+  color: #e8e9eb;
 }
 
 .footer-links {
@@ -592,7 +658,7 @@ footer p a {
 .footer-links li a {
   font-size: 17px;
   text-decoration: underline;
-  color: white;
+  color: #acada8;
   font-weight: 500;
 }
 
