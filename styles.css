@@ -50,7 +50,7 @@ table {
 
 nav {
   height: 10rem;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #e8e9eb;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -94,7 +94,7 @@ main {
 }
 
 .latest-articles article {
-  border: 5px solid white;
+  border: 5px solid #e8e9eb;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,7 +250,7 @@ main {
 
 .email-list a{
   font-size: 3rem;
-  color: #E8E9EB;
+  color: #e8e9eb;
   margin-bottom: 2rem;
 }
 
@@ -388,7 +388,7 @@ main {
   width: 60%;
   height: 400px;
   background: #746D69;
-  border: 5px solid #E8E9EB;
+  border: 5px solid #e8e9eb;
   border-radius: 25px;
   margin-top: 4rem;
 }
@@ -504,7 +504,7 @@ main {
   width: 60%;
   height: 100%;
   background: #746D69;
-  border: 2px solid white;
+  border: 2px solid #e8e9eb;
   border-radius: 5px;
   margin-top: -50%;
   bottom: 40%;
