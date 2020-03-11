@@ -618,14 +618,14 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 6rem;
-  color: black;
   margin-top: 5rem;
 }
 
 footer h3 {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   color: #e8e9eb;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 
@@ -644,16 +644,17 @@ footer ul li {
 }
 
 footer ul li a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #e8e9eb;
   text-decoration: none;
 }
 
 footer p {
-  width: 25%;
+  width: 35%;
   text-align: center;
   margin-top: 30px;
-  color: #e8e9eb;
+  color: #cccdc6;
+  line-height: 2rem;
 }
 
 footer p a {
