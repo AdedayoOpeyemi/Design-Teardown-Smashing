@@ -58,6 +58,26 @@ nav {
   color: white;
 }
 
+.topics-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 8rem;
+  padding: 10px;
+  background: none;
+  border: 3px solid #e8e9eb;
+  border-radius: 8px;
+  outline: none;
+  color: #e8e9eb;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.topics-button img {
+  margin: 5px;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -110,7 +130,23 @@ main {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
+  margin-bottom: 15rem;
+  color: #bbbcb6;
+}
 
+.email-list a{
+  font-size: 3rem;
+  color: #E8E9EB;
+  margin-bottom: 2rem;
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 15rem;
+  background: #e8e9eb;
 }
 
 .smashing-tv {
@@ -189,11 +225,7 @@ main {
   margin: 40px;
   background: #746D69;
   border-radius: 7px;
-  /* transform: rotate(-20deg); */
-}
-
-.profle-pic:hover {
-  background: white;
+  transform: rotate(-20deg);
 }
 
 
