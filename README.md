@@ -17,7 +17,7 @@ This project was all about figuring out what makes Smashing Magazine tick. We we
 
 [This one's for production](https://rawcdn.githack.com/AdedayoOpeyemi/Design-Teardown-Smashing/bdcb5e5d21f50a4f229af1a7fc5fc096c26c5a58/index.html)
 
-for comparison, here's the [archived version](http://web.archive.org/web/20200309074225/https://www.smashingmagazine.com/), which we archived in the Wayback Machine. The original Smashing Magazine Homepage is [here](https://www.smashingmagazine.com/).
+For comparison, here's the [archived version](http://web.archive.org/web/20200309074225/https://www.smashingmagazine.com/), which we archived in the Wayback Machine. The original Smashing Magazine Homepage is [here](https://www.smashingmagazine.com/).
 
 ## Authors
 
@@ -27,11 +27,11 @@ for comparison, here's the [archived version](http://web.archive.org/web/2020030
 - Twitter: [@untakenramram](https://twitter.com/untakenramram)
 - Linkedin: [Ramsey Njire](https://www.linkedin.com/in/ramsey-njire-51984931/)
 
-👤 **Author2**
+👤 **Opeyemi Oyelesi**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@AdebayoOpeyemi](https://github.com/AdedayoOpeyemi)
+- Twitter: [@oyelesiopy](https://twitter.com/oyelesiopy)
+- Linkedin: [Opeyemi Oyelesi](https://www.linkedin.com/in/opeyemioyelesi/)
 
 ## 🤝 Contributing
 
