@@ -147,6 +147,17 @@ main {
   height: 3rem;
   width: 15rem;
   background: #e8e9eb;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.material-icons {
+  justify-self: flex-end;
+  margin-left: 20px;
 }
 
 .smashing-tv {
