@@ -168,9 +168,48 @@ main {
 }
 
 .ethical-design {
-  height: 40rem;
+  height: auto;
   margin: 5px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10rem;
 }
+
+.extra-content a {
+  width: 40%;
+  margin-top: 10rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: underline;
+}
+
+.extra-content h3 {
+  width: 50%;
+  color: #cccdc6;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.extra-content p {
+  width: 60%;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-bottom: 40px;
+}
+
+#Ethical-design-book {
+  width: 60%;
+  height: 700px;
+  background: #746D69;
+  border: 5px solid #E8E9EB;
+  border-radius: 25px;
+  margin-top: 4rem;
+}
+
 
 .community-links {
   display: grid;
@@ -251,8 +290,51 @@ main {
 }
 
 .design-systems {
-  height: 15rem;
+  height: auto;
   margin: 10px 0;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  grid-template-rows: 1fr;
+  padding: 4rem;
+}
+
+.design-systems article {
+  display: flex;
+  flex-direction: column;
+}
+
+.design-systems h3 {
+  font-size: 2rem;
+}
+
+.design-systems a {
+  margin-top: 2rem;;
+}
+
+.design-systems p {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.design-systems div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#design-systems-img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #746D69;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: -50%;
+  bottom: 40%;
+  left: 30%;
+  transform: rotate(-20deg);
 }
 
 .curated-posts {
