@@ -55,7 +55,7 @@ nav {
   align-items: center;
   font-size: 1.625rem;
   font-weight: 700;
-  color: white;
+  color: #e8e9eb;
 }
 
 .topics-button {
@@ -93,18 +93,80 @@ main {
 .latest-articles article {
   border: 5px solid white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
   font-weight: 700;
-  color: white;
+  color: #e8e9eb;
   padding: 4rem;
 }
 
+.profile-pic {
+  min-height: 180px;
+  min-width: 180px;
+  margin: 40px;
+  background: #746D69;
+  border-radius: 7px;
+  transform: rotate(-20deg);
+}
 
+.small-profile-pic {
+  min-height: 50px;
+  min-width: 50px;
+  margin: 20px;
+  margin-top: 0;
+  background: #746D69;
+  border-radius: 7px;
+  transform: rotate(-20deg);
+}
+
+.article-profile-pic {
+  border: 5px solid #e8e9eb;
+  align-self: flex-start;
+  margin-left: 0;
+  margin-right: 1.5rem;
+}
+
+.details-container {
+  padding: 1rem;
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.latest-articles article a {
+  align-self: flex-start;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #e8e9eb;
+  font-size: 1.3rem;
+}
+
+.latest-articles article a > h5 {
+  height: auto;
+  width: auto;
+  margin-right: 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.latest-articles article a > span {
+  font-weight: 300;
+  color: #cccdc6;
+}
+
+.latest-articles .tags > span {
+  margin: 2rem 2rem 2rem 0;
+  color: #acada8;
+}
 
 .latest-posts {
-  height: 140rem;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr 1.5fr 1.2fr;
@@ -114,16 +176,35 @@ main {
 .latest-posts article {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.625rem;
   font-weight: 700;
-  color: black;
+  color: #746D69;
   padding: 3rem;
+}
+
+.latest-posts article h5 {
+  font-size: 0.8rem;
+  align-self: flex-start;
+  color: #bbbcb6;
+  margin-bottom: 1.5rem;
 }
 
 .latest-posts article h2 {
   margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.latest-posts article h4 {
+  font-size: 1rem;
+  align-self: flex-start;
+  color: #bbbcb6;
+  margin-bottom: 1.5rem;
+}
+
+.latest-posts article h4 a {
+  color: inherit;
 }
 
 .latest-posts article p {
@@ -132,6 +213,14 @@ main {
   line-height: 2rem;
   margin-bottom: 15rem;
   color: #bbbcb6;
+}
+
+.email-list {
+  grid-column: 2/3;
+}
+
+.email-list-img {
+  margin-bottom: 3rem;;
 }
 
 .email-list a{
@@ -145,7 +234,8 @@ main {
   justify-content: center;
   align-items: center;
   height: 3rem;
-  width: 15rem;
+  padding: 2rem;
+  width: auto;
   background: #e8e9eb;
   border: none;
   border-radius: 10px;
@@ -161,10 +251,46 @@ main {
 }
 
 .smashing-tv {
-  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 3rem;
   width: 90%;
   border-radius: 10px;
   margin: 10px auto;
+}
+
+.newsletter-img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: 30px;
+}
+
+.smashing-tv-img {
+  height: 12.5rem;
+  width: 12.5rem;
+}
+
+.call-to-action-anchor {
+  width: 40%;
+  margin-top: 10rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: underline;
+}
+
+.smashing-tv-anchor {
+  margin-top: 3rem;
+}
+
+.smashing-tv p {
+  text-align: center;
+  color: #acada8;
 }
 
 .ethical-design {
@@ -175,15 +301,6 @@ main {
   align-items: center;
   text-align: center;
   padding-bottom: 10rem;
-}
-
-.extra-content a {
-  width: 40%;
-  margin-top: 10rem;
-  font-size: 3rem;
-  font-weight: 700;
-  color: white;
-  text-decoration: underline;
 }
 
 .extra-content h3 {
@@ -234,12 +351,13 @@ main {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 2rem;
+  color: #746D69;
 }
 
 .community-links section > article p {
   font-size: 1.2rem;
   line-height: 2rem;
-
+  color: #acada8;
 }
 
 #person-of-the-week {
@@ -269,30 +387,9 @@ main {
   line-height: 2rem;
 } 
 
-.profile-pic {
-  min-height: 180px;
-  min-width: 180px;
-  margin: 40px;
-  background: #746D69;
-  border-radius: 7px;
-  transform: rotate(-20deg);
-}
-
-
-.small-profile-pic {
-  min-height: 50px;
-  min-width: 50px;
-  margin: 20px;
-  margin-top: 0;
-  background: #746D69;
-  border-radius: 7px;
-  transform: rotate(-20deg);
-}
-
 .design-systems {
   height: auto;
-  margin: 10px 0;
-  margin-top: 10rem;
+  margin: 10rem 0 10px;
   display: grid;
   grid-template-columns: 7fr 3fr;
   grid-template-rows: 1fr;
@@ -317,6 +414,10 @@ main {
   font-size: 1.5rem;
 }
 
+.design-systems-button {
+  width: 18rem;
+}
+
 .design-systems div {
   display: flex;
   justify-content: center;
@@ -326,7 +427,7 @@ main {
 
 #design-systems-img {
   position: absolute;
-  width: 50%;
+  width: 60%;
   height: 100%;
   background: #746D69;
   border: 2px solid white;
@@ -386,14 +487,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-#newsletter-img {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  border: 5px solid white;
-  margin-top: 30px;
 }
 
 .newsletter a {
