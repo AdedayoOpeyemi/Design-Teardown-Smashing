@@ -37,7 +37,7 @@ For comparison, here's the [archived version](http://web.archive.org/web/2020030
 
 👤 **Opeyemi Oyelesi**
 
-- Github: [@AdebayoOpeyemi](https://github.com/AdedayoOpeyemi)
+- Github: [@AdedayoOpeyemi](https://github.com/AdedayoOpeyemi)
 - Twitter: [@oyelesiopy](https://twitter.com/oyelesiopy)
 - Linkedin: [Opeyemi Oyelesi](https://www.linkedin.com/in/opeyemioyelesi/)
 
