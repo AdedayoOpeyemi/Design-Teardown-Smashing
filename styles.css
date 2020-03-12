@@ -1,51 +1,129 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* CSS Reset section */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-body {
-  line-height: 1;
-  background: #e8e9eb;
+
+ol,
+ul {
+  list-style: none;
 }
-ol, ul {
-	list-style: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 nav {
@@ -110,7 +188,7 @@ main {
   min-height: 180px;
   min-width: 180px;
   margin: 40px;
-  background: #746D69;
+  background: #746d69;
   border-radius: 7px;
   transform: rotate(-20deg);
 }
@@ -120,7 +198,7 @@ main {
   min-width: 50px;
   margin: 20px;
   margin-top: 0;
-  background: #746D69;
+  background: #746d69;
   border-radius: 7px;
   transform: rotate(-20deg);
 }
@@ -140,6 +218,38 @@ main {
   align-items: center;
 }
 
+footer p a {
+  color: #e8e9eb;
+}
+
+footer ul li a {
+  font-size: 2rem;
+  color: #e8e9eb;
+  text-decoration: none;
+}
+
+.email-list a {
+  font-size: 3rem;
+  color: #e8e9eb;
+  margin-bottom: 2rem;
+}
+
+.extra-content a {
+  color: #cccdc6;
+  margin-top: 2rem;
+}
+
+.design-systems a {
+  margin-top: 1.5rem;
+  color: #e8e9eb;
+}
+
+.newsletter a {
+  margin-top: 2rem;
+  text-align: center;
+  color: #e8e9eb;
+}
+
 .latest-articles article a {
   align-self: flex-start;
   margin-top: 1rem;
@@ -151,12 +261,23 @@ main {
   font-size: 1.3rem;
 }
 
+.latest-posts article h5 {
+  font-size: 0.8rem;
+  align-self: flex-start;
+  color: #bbbcb6;
+  margin-bottom: 1.5rem;
+}
+
 .latest-articles article a > h5 {
   height: auto;
   width: auto;
   margin-right: 0.4rem;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.design-systems-button span {
+  font-size: 1.5rem;
 }
 
 .latest-articles article a > span {
@@ -169,10 +290,15 @@ main {
   color: #acada8;
 }
 
+.material-icons {
+  justify-self: flex-end;
+  margin-left: 20px;
+}
+
 .latest-articles .material-icons {
   justify-self: flex-end;
   align-self: flex-start;
-  transform: scale(3,2);
+  transform: scale(3, 2);
   margin: 0;
   margin-top: 12rem;
   color: #acada8;
@@ -180,7 +306,7 @@ main {
 
 .latest-posts .material-icons {
   align-self: flex-start;
-  transform: scale(3,2);
+  transform: scale(3, 2);
   margin: 0;
   margin-top: 6rem;
   color: #bbbcb6;
@@ -205,15 +331,8 @@ main {
   align-items: center;
   font-size: 1.625rem;
   font-weight: 700;
-  color: #746D69;
+  color: #746d69;
   padding: 3rem;
-}
-
-.latest-posts article h5 {
-  font-size: 0.8rem;
-  align-self: flex-start;
-  color: #bbbcb6;
-  margin-bottom: 1.5rem;
 }
 
 .latest-posts article h2 {
@@ -228,8 +347,48 @@ main {
   margin-bottom: 1.5rem;
 }
 
+.curated-posts article a {
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.footer-links li a {
+  font-size: 17px;
+  text-decoration: underline;
+  color: #acada8;
+  font-weight: 500;
+}
+
 .latest-posts article h4 a {
   color: inherit;
+}
+
+footer p {
+  width: 35%;
+  text-align: center;
+  margin-top: 30px;
+  color: #cccdc6;
+  line-height: 2rem;
+}
+
+.extra-content p {
+  width: 60%;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-bottom: 40px;
+  color: #bbbcb6;
+}
+
+.design-systems p {
+  width: 100%;
+  font-size: 1.5rem;
+  color: #acada8;
+}
+
+.newsletter p {
+  text-align: center;
+  color: #cccdc6;
 }
 
 .latest-posts article p {
@@ -245,13 +404,7 @@ main {
 }
 
 .email-list-img {
-  margin-bottom: 3rem;;
-}
-
-.email-list a{
-  font-size: 3rem;
-  color: #e8e9eb;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .call-to-action {
@@ -265,14 +418,9 @@ main {
   border: none;
   border-radius: 10px;
   outline: none;
-  color: #746D69;
+  color: #746d69;
   font-size: 1rem;
   font-weight: 700;
-}
-
-.material-icons {
-  justify-self: flex-end;
-  margin-left: 20px;
 }
 
 .smashing-tv {
@@ -359,9 +507,11 @@ main {
   margin: 0.8rem;
 }
 
-.extra-content a {
-  color: #cccdc6;
-  margin-top: 2rem;
+footer h3 {
+  margin-bottom: 3rem;
+  color: #e8e9eb;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .extra-content h3 {
@@ -371,15 +521,6 @@ main {
   font-weight: 700;
 }
 
-.extra-content p {
-  width: 60%;
-  margin-top: 20px;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  margin-bottom: 40px;
-  color: #bbbcb6;
-}
-
 .ethical-design-button {
   font-size: 1.2rem;
 }
@@ -387,7 +528,7 @@ main {
 #Ethical-design-book {
   width: 60%;
   height: 400px;
-  background: #746D69;
+  background: #746d69;
   border: 5px solid #e8e9eb;
   border-radius: 25px;
   margin-top: 4rem;
@@ -409,15 +550,39 @@ main {
   padding: 2rem;
 }
 
+.design-systems article {
+  display: flex;
+  flex-direction: column;
+}
+
+.curated-posts article {
+  width: 25%;
+  margin-right: 2px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.bright-gray article {
+  border: 1px solid #746d69;
+}
+
 .community-links section > article {
   border: none;
+}
+
+.curated-posts article h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: #746d69;
 }
 
 .community-links section > article h2 {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 2rem;
-  color: #746D69;
+  color: #746d69;
 }
 
 .community-links section > article p {
@@ -444,14 +609,14 @@ main {
 
 #person-of-the-week > article h2 {
   font-size: 1rem;
-  color:   #746D69;
+  color: #746d69;
   margin-bottom: 2rem;
 }
 
 #person-of-the-week > article p {
   font-size: 1.2rem;
   line-height: 2rem;
-} 
+}
 
 .design-systems {
   height: auto;
@@ -462,34 +627,14 @@ main {
   padding: 4rem;
 }
 
-.design-systems article {
-  display: flex;
-  flex-direction: column;
-}
-
 .design-systems h3 {
   font-size: 1rem;
   text-transform: uppercase;
   color: #cccdc6;
 }
 
-.design-systems a {
-  margin-top: 1.5rem;
-  color: #e8e9eb;
-}
-
-.design-systems p {
-  width: 100%;
-  font-size: 1.5rem;
-  color: #acada8;
-}
-
 .design-systems-button {
   width: 20rem;
-}
-
-.design-systems-button span {
-  font-size: 1.5rem;
 }
 
 .design-systems div {
@@ -503,7 +648,7 @@ main {
   position: absolute;
   width: 60%;
   height: 100%;
-  background: #746D69;
+  background: #746d69;
   border: 2px solid #e8e9eb;
   border-radius: 5px;
   margin-top: -50%;
@@ -520,23 +665,17 @@ main {
   margin: 5px auto;
 }
 
-.curated-posts article {
-  width: 25%;
-  margin-right: 2px;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-}
-
 #last-article {
   margin-right: 0;
 }
 
-.curated-posts article h2 {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 2rem;
-  color: #746D69;
+footer ul {
+  display: flex;
+  list-style: disc inside;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  color: #e8e9eb;
 }
 
 .curated-posts article ul {
@@ -544,13 +683,13 @@ main {
   color: #acada8;
 }
 
-.curated-posts article li {
-  margin: 1rem;
+footer ul li {
+  margin: 10px 5px;
+  line-height: 30px;
 }
 
-.curated-posts article a {
-  color: inherit;
-  font-size: 1.5rem;
+.curated-posts article li {
+  margin: 1rem;
 }
 
 .newsletter {
@@ -563,17 +702,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.newsletter a {
-  margin-top: 2rem;
-  text-align: center;
-  color: #e8e9eb;
-}
-
-.newsletter p {
-  text-align: center;
-  color: #cccdc6;
 }
 
 .newsletter form {
@@ -621,46 +749,6 @@ footer {
   margin-top: 5rem;
 }
 
-footer h3 {
-  margin-bottom: 3rem;
-  color: #e8e9eb;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-
-footer ul {
-  display: flex;
-  list-style: disc inside;
-  flex-wrap:wrap;
-  text-align: center;
-  justify-content: center;
-  color: #e8e9eb;
-}
-
-footer ul li {
-  margin: 10px 5px;
-  line-height: 30px;
-}
-
-footer ul li a {
-  font-size: 2rem;
-  color: #e8e9eb;
-  text-decoration: none;
-}
-
-footer p {
-  width: 35%;
-  text-align: center;
-  margin-top: 30px;
-  color: #cccdc6;
-  line-height: 2rem;
-}
-
-footer p a {
-  color: #e8e9eb;
-}
-
 .footer-links {
   width: 35%;
   display: flex;
@@ -670,29 +758,19 @@ footer p a {
   list-style: none;
 }
 
-.footer-links li a {
-  font-size: 17px;
-  text-decoration: underline;
-  color: #acada8;
-  font-weight: 500;
-}
-
 .dark-silver {
-  background: #746D69;
+  background: #746d69;
 }
 
 .bright-gray {
-  background: #E8E9EB;
-}
-
-.bright-gray article {
-  border: 1px solid #746D69;
+  background: #e8e9eb;
 }
 
 .silver-chalice {
-  background: #ACADA8;
+  background: #acada8;
 }
 
-section h6, article h6 {
+section h6,
+article h6 {
   display: none;
 }
