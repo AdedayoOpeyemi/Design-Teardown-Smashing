@@ -693,3 +693,6 @@ footer p a {
   background: #ACADA8;
 }
 
+section h6, article h6 {
+  display: none;
+}
